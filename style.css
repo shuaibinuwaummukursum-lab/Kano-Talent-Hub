@@ -1,0 +1,116 @@
+/* Reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+header {
+  background: #111;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #ffcc00;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  background: #ffcc00;
+  color: #111;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #e6b800;
+}
+
+form {
+  max-width: 400px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.card {
+  background: #333;
+  padding: 20px;
+  margin: 15px;
+  max-width: 300px;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  color: #888;
+  margin-top: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .card {
+    max-width: 90%;
+    margin: 15px auto;
+  }
+
+  form {
+    width: 90%;
+  }
+}
